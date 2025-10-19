@@ -1,7 +1,7 @@
-# SimRacing Project
+# LaunchSimRacing Project
 
 ## Overview
-The SimRacing project is designed to streamline the setup of a sim racing environment on Windows. It automates the configuration of monitor layouts, manages background tasks, and launches necessary applications using PowerShell scripts.
+The LaunchSimRacing project is designed to streamline the setup of a sim racing environment on Windows. It automates the configuration of monitor layouts, manages background tasks, and launches necessary applications using PowerShell scripts.
 
 ## Features
 - **Environment Setup**: Automatically configures monitor layouts based on user-defined settings.
