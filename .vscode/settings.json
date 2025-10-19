@@ -1,0 +1,14 @@
+{
+    "editor.formatOnSave": true,
+    "powershell.codeFormatting.autoCorrectAliases": true,
+    "powershell.codeFormatting.formatOnPaste": true,
+    "powershell.codeFormatting.useCorrectCasing": true,
+    "powershell.codeFormatting.newLineAfterOpenBrace": true,
+    "powershell.codeFormatting.newLineBeforeCloseBrace": true,
+    "powershell.codeFormatting.newLineAfterKeywords": true,
+    "powershell.codeFormatting.trimTrailingWhitespace": true,
+    "powershell.codeFormatting.useTabs": false,
+    "powershell.codeFormatting.tabSize": 4,
+    "powershell.scriptAnalysis.enable": true,
+    "powershell.scriptAnalysis.settingsPath": ".pester.yml"
+}

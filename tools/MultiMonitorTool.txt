@@ -1,0 +1,1 @@
+Name=<monitor_name> Width=<width> Height=<height> DisplayFrequency=<refresh_rate> PositionX=<x_offset> PositionY=<y_offset>

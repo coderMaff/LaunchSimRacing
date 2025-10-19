@@ -1,0 +1,93 @@
+<SimRacingConfig>
+  <PowerPlan>
+    <Scheme>SCHEME_MIN</Scheme>
+  </PowerPlan>
+
+  <Tools>
+    <Tool name="MultiMonitorTool">C:\Games\Multimonitortool\MultiMonitorTool.exe</Tool>
+    <Tool name="AudioSwitch">C:\Tools\AudioSwitch.exe</Tool>
+  </Tools>
+
+
+  <MonitorLayouts>
+    <SimRacing>
+      <Monitor id="3">
+        <Resolution>1920x1080</Resolution>
+        <Position>Left</Position>
+        <RefreshRate>60</RefreshRate>
+      </Monitor>
+      <Monitor id="2">
+        <Resolution>1920x1080</Resolution>
+        <Position>Center</Position>
+        <RefreshRate>60</RefreshRate>
+        <isPrimary>true</isPrimary>
+      </Monitor>
+      <Monitor id="1">
+        <Resolution>1920x1080</Resolution>
+        <Position>Right</Position>
+        <RefreshRate>60</RefreshRate>
+      </Monitor>
+    </SimRacing>
+    <Work>
+      <Monitor id="1">
+        <Resolution>1920x1080</Resolution>
+        <Position>Left</Position>
+        <RefreshRate>60</RefreshRate>
+      </Monitor>
+      <Monitor id="2">
+        <Resolution>3840x2160</Resolution>
+        <Position>Center</Position>
+        <RefreshRate>60</RefreshRate>
+        <isPrimary>true</isPrimary>
+      </Monitor>
+      <Monitor id="3">
+        <Resolution>1920x1080</Resolution>
+        <Position>Right</Position>
+        <RefreshRate>60</RefreshRate>
+      </Monitor>
+    </Work>
+  </MonitorLayouts>
+
+  <Apps>
+    <App name="Steam">
+      <RegistryPath>HKLM:\Software\WOW6432Node\Valve\Steam</RegistryPath>
+      <ValueName>InstallPath</ValueName>
+      <Exe>steam.exe</Exe>
+      <InstallPath>C:\Program Files (x86)\Steam</InstallPath>
+    </App>
+    <App name="CrewChief">
+      <RegistryPath>HKCU:\Software\Britton IT Ltd\CrewChiefV4</RegistryPath>
+      <ValueName>InstallPath</ValueName>
+      <Exe>CrewChiefV4.exe</Exe>
+      <InstallPath>C:\Program Files (x86)\Britton IT Ltd\CrewChiefV4</InstallPath>
+    </App>
+    <App name="TinyPedal">
+      <RegistryPath>HKCU:\Software\TinyPedal</RegistryPath>
+      <ValueName>InstallPath</ValueName>
+      <Exe>TinyPedal.exe</Exe>
+      <InstallPath>C:\Games\TinyPedal</InstallPath>
+    </App>
+    <App name="ResizeRacoon">
+      <RegistryPath>HKCU:\Software\resizeraccoon\Resize Raccoon</RegistryPath>
+      <ValueName>InstallPath</ValueName>
+      <Exe>Resize Raccoon.exe</Exe>
+      <InstallPath>C:\Program Files\Resize Raccoon</InstallPath>
+    </App>
+    <App name="SimProManager">
+      <RegistryPath>HKCU:\Software\SimProManager</RegistryPath>
+      <ValueName>InstallPath</ValueName>
+      <Exe>SimPro.exe</Exe>
+      <InstallPath>C:\Program Files (x86)\simpro\bin</InstallPath>
+    </App>
+  </Apps>
+
+  <KillTasks>
+    <Task>PowerToys</Task>
+    <Task>SyncTrayzor</Task>
+    <Task>Copilot</Task>
+    <Task>SearchHost</Task>
+    <Task>Widgets</Task>
+    <Task>TextInputHost</Task>
+    <Task>MicrosoftEdgeUpdateCore</Task>
+  </KillTasks>
+</SimRacingConfig>
