@@ -11,7 +11,7 @@ The LaunchSimRacing project is designed to streamline the setup of a sim racing 
 ## Prerequisites
 - Windows operating system
 - PowerShell 5.1 or higher
-- MultiMonitorTool 2.2 or Higher from NirSogft - https://www.nirsoft.net/utils/multi_monitor_tool.html
+- MultiMonitorTool 2.2 or Higher from NirSoft - https://www.nirsoft.net/utils/multi_monitor_tool.html
 
 ## Installation
 1. Clone the repository:
