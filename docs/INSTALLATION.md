@@ -26,6 +26,10 @@ Before you begin, ensure you have the following installed on your system:
 3. **Configure the XML File**:
    Open the `startSimRacing.xml` file and configure it according to your system's applications, monitor layouts, and power plans. Ensure that the paths and settings match your environment.
 
+4. **Get the tools**:
+   Download MultiMonitorTool https://www.nirsoft.net/utils/multi_monitor_tool.html
+   and configure its location in startSimRacing.xml
+
 4. **Run the Main Script**:
    To start the SimRacing environment, execute the main PowerShell script:
    ```
