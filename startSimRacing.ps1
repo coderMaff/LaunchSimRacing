@@ -96,20 +96,31 @@ if ($scheme) {
     powercfg -setactive $scheme
 }
 
-# 🔇 Kill background clutter
-$config.SimRacingConfig.KillTasks.Task | ForEach-Object {
-    Write-Host "Killing task: $_"
-    Get-Process $_ -ErrorAction SilentlyContinue | Stop-Process -Force -ErrorAction SilentlyContinue
-}
+if (!$gameOver) {
 
+    # 🔇 Kill background clutter
+    $config.SimRacingConfig.KillTasks.Task | ForEach-Object {
+        Write-Host "Killing task: $_"
+        Get-Process $_ -ErrorAction SilentlyContinue | Stop-Process -Force -ErrorAction SilentlyContinue
+    }
+
+    # 🚀 Launch apps
+    $config.SimRacingConfig.Apps.App | ForEach-Object {
+        startApp $_
+    }
+}
+else {
+    # 🛑 Game over - close sim racing apps
+    $config.SimRacingConfig.Apps.App | ForEach-Object {
+        $exe = $_.Exe
+        $processName = [System.IO.Path]::GetFileNameWithoutExtension($exe)
+        Write-Host "Closing app: $processName"
+        Get-Process -Name $processName -ErrorAction SilentlyContinue | Stop-Process -Force -ErrorAction SilentlyContinue
+    }
+}
 
 # 🖥️ Validate and enforce monitor layout
 ensureMonitorLayout
-
-# 🚀 Launch apps
-$config.SimRacingConfig.Apps.App | ForEach-Object {
-    startApp $_
-}
 
 # 📝 Log
 Add-Content ".\startup.log" "$(Get-Date): Sim racing environment launched [$layoutProfile]"
